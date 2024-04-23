@@ -1,0 +1,289 @@
+.testimonialChef {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 400px;
+
+  height: 600px;
+}
+
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonialContainer > :nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.testimonialRightSide {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 650px;
+}
+
+.testimonialRectangle {
+  position: absolute;
+  width: 430px;
+  height: 290px;
+
+  background: #53ec62;
+
+  right: -30px;
+  border-radius: 120px 120px 30px 30px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.testimonialRightSide > :nth-child(2) {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.testimonialRightSide > :nth-child(1) {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #ff6868;
+}
+
+.testimonialRightSide > :nth-child(3) {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 159%;
+
+  color: #555555;
+}
+
+.pizza {
+  position: absolute;
+  top: 390px;
+  font-size: 40px;
+  right: -50px;
+
+  transform: rotate(30.99deg);
+}
+
+.smile {
+  position: absolute;
+  top: 390px;
+  font-size: 44px;
+  transform: rotate(-17.03deg);
+  left: -35px;
+}
+.box2 {
+  width: 140px;
+  border-radius: 20px;
+  margin: 100 -50px;
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #ff6868;
+  font-size: 12px;
+  top: 570px;
+  left: 270px;
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+  border-top: 10px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  right: 140px;
+  bottom: 30px;
+  transform: skewY(50deg);
+}
+
+.testimonialPeople {
+  display: flex;
+  margin-top: 10px;
+  top: 350px;
+  align-items: center;
+}
+
+.testimonialPeople > :nth-child(1) > img {
+  width: 65px;
+  position: relative;
+  height: 65px;
+}
+
+.testimonialPeople > :nth-child(1) > :nth-child(1) {
+  width: 55px;
+  height: 55px;
+  z-index: 1;
+}
+.testimonialPeople > :nth-child(1) > :nth-child(2) {
+  right: 20px;
+  z-index: 2;
+}
+.testimonialPeople > :nth-child(1) > :nth-child(3) {
+  right: 45px;
+  z-index: 3;
+}
+
+.testimonialPeople > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  width: 170px;
+}
+
+.feedbackColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedbackColumn > :nth-child(2) {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.feedbackColumn > :nth-child(1) {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #000000;
+}
+
+.feedbackColumn > :nth-child(2) > :nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #454545;
+}
+
+.feedbackColumn > :nth-child(2) > :nth-child(3) {
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #807e7e;
+}
+
+.feedbackColumn > :nth-child(2) > :nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1240px) {
+  .testimonialContainer {
+    flex-direction: column;
+  }
+  .testimonialChef {
+    margin-left: 50px;
+    width: 400px;
+    background-size: contain;
+    height: 500px;
+  }
+  .testimonialRightSide {
+    margin-left: 5vw;
+    gap: 4rem;
+  }
+  .testimonialRectangle {
+    position: absolute;
+    width: 350px;
+    height: 230px;
+    background: #53ec62;
+    right: 50px;
+    border-radius: 90px 90px 30px 30px;
+    bottom: 0px;
+    z-index: -1;
+  }
+  .testimonialContainer > :nth-child(1) {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .pizza {
+    right: 20px;
+  }
+  .box2 {
+    top: 480px;
+    left: 240px;
+  }
+  .chefContainer {
+    order: 2;
+  }
+}
+
+.chefContainer {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 522px) {
+  .testimonialPeople {
+    flex-direction: column;
+  }
+  .testimonialPeople > :nth-child(1) {
+    margin: 0 auto;
+    width: 150px;
+  }
+  .testimonialRightSide > :nth-child(3) {
+    text-align: center;
+  }
+
+  .testimonialRightSide {
+    margin-left: 0;
+    text-align: center;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .testimonialRectangle {
+    right: 40px;
+  }
+  .testimonialChef {
+    margin-left: 0;
+    left: 25px;
+  }
+  .box2 {
+    left: 140px;
+    top: 350px;
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonialChef {
+    width: 250px;
+    margin-right: 20px;
+    margin-left: 0px;
+  }
+  .pizza {
+    top: 260px;
+    left: 250px;
+  }
+  .smile {
+    top: 270px;
+    font-size: 40px;
+    right: 250px;
+  }
+  .testimonialRectangle {
+    border-radius: 50px 50px 30px 30px;
+    bottom: 119px;
+    right: -10px;
+    width: 250px;
+    height: 180px;
+  }
+  .testimonialChef {
+    left: 0px;
+  }
+}

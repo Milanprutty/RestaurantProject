@@ -1,0 +1,66 @@
+.mounted {
+  position: absolute;
+
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  color: white;
+  list-style: none;
+
+  z-index: 10;
+
+  transition: width 0.6s ease, opacity 0.6s ease;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
+  right: 0px;
+  height: 100vh;
+  top: 77px;
+  width: 0px;
+  opacity: 0.9;
+}
+
+.open {
+  font-size: 20px;
+  width: 200px;
+  opacity: 1;
+}
+
+.mounted {
+  overflow: hidden;
+}
+
+.mounted > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 5%;
+  font-size: 20px;
+  justify-content: center;
+
+  /* Services */
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.mounted > :nth-child(1) > li {
+  cursor: pointer;
+}
+
+@media (max-width: 630px) {
+  .mounted {
+    top: 66px;
+  }
+}
+
+@media (min-width: 630px) {
+  .mounted > :nth-child(1) > .rightSideBtn > button {
+    display: none;
+  }
+}

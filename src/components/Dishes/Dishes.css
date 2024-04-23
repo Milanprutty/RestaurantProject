@@ -1,0 +1,215 @@
+.standoutDishes {
+  font-weight: 700;
+
+  line-height: 45px;
+  text-transform: capitalize;
+
+  font-size: 60px;
+  line-height: 79px;
+
+  color: #000000;
+}
+
+.dishImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dishImg > img {
+  width: 250px;
+  height: 250px;
+}
+
+.dishPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dishInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.dishInfo > :nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+}
+.dishInfo > :nth-child(2) {
+  font-size: 15px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.dishPrice > :nth-child(1) {
+  font-size: 22px;
+  font-weight: 500;
+}
+.dishPrice > :nth-child(2) {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.dishPrice > :nth-child(1) > span {
+  color: #ff6868;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dishHeart {
+  position: absolute;
+  background-color: #39db4a;
+
+  width: 60px;
+  height: 50px;
+
+  border-radius: 0px 16.5px 0px 26.5px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dishHeart > :nth-child(1) {
+  width: 20px;
+}
+
+.dishAndBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.carouselBtns {
+  display: flex;
+
+  left: calc(40vw - 20px);
+  gap: 2rem;
+}
+
+.carouselBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carouselBtns > :nth-child(2) {
+  background-color: #39db4a;
+}
+
+.specialDishes {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ff6868;
+}
+
+.dishCard {
+  width: 350px;
+  height: 400px;
+
+  background: white;
+  box-shadow: 2px 9px 26px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slick-list {
+  height: 500px;
+  padding-top: 25px !important;
+}
+
+.slick-slider {
+  top: 20px;
+  display: flex !important;
+  justify-content: center;
+}
+
+@media (max-width: 703px) {
+  .dishCard {
+    width: 285px;
+  }
+}
+
+.dishListContainer {
+  margin-top: 100px;
+
+  display: flex;
+  gap: 12rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dishListContainer > :nth-child(1) {
+  overflow-x: clip;
+}
+
+.dishListContainer > :nth-child(1) > :nth-child(1) {
+  width: 600px;
+}
+
+.carouselBtnContainer {
+  margin-left: 84vw;
+  margin-top: -50px;
+  display: flex;
+  gap: 2rem;
+}
+
+.slick-slide > :nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1260px) {
+  .carouselBtnContainer {
+    margin-left: 78vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselBtnContainer {
+    display: none;
+  }
+  .dishListContainer > :nth-child(1) > :nth-child(1) {
+    width: unset;
+  }
+}
+
+.slick-list {
+  width: 1250px;
+}
+
+.specialDishContainer {
+  margin-left: 5vw;
+}
+
+@media (max-width: 523px) {
+  .specialDishes {
+    text-align: center;
+  }
+  .specialDishContainer {
+    margin-left: 0;
+  }
+  .dishAndBtns {
+    text-align: center;
+  }
+}

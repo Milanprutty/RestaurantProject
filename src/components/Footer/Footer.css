@@ -1,0 +1,87 @@
+.footer {
+  margin-top: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footerFoodiContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footerF {
+  width: 34px;
+  height: 41px;
+  display: flex;
+  background: #39db4a;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footerFoodi {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.underFoodi {
+  width: 200px;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #555555;
+}
+
+.footerDataContainer {
+  display: flex;
+  gap: 10rem;
+  margin: 0 auto;
+}
+
+.footerData {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.footerItems {
+  gap: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.foodiLi {
+  margin-right: 5px;
+}
+
+.footerData > :nth-child(1) {
+  font-weight: 600;
+  font-size: 17px;
+  color: #000000;
+}
+
+.individualFooterItems {
+  font-weight: 500;
+  font-size: 15px;
+  color: #555555;
+}
+
+@media (max-width: 1080px) {
+  .footerDataContainer {
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footerFoodi {
+    width: 150px;
+  }
+  .underFoodi {
+    width: 150px;
+  }
+}

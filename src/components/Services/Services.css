@@ -1,0 +1,138 @@
+.services {
+  display: flex;
+  margin-left: 5vw;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.servicesLeftSide > :nth-child(2) {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+
+  color: #000000;
+}
+
+.servicesLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.servicesLeftSide > :nth-child(3) {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 160%;
+
+  color: #555555;
+}
+
+.exploreBtn {
+  padding: 23px 60px 23px 60px;
+
+  background: #39db4a;
+  border-radius: 40px;
+  border: none;
+  font-size: 26px;
+
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+
+  color: #ffffff;
+}
+
+.serviceDataContainer {
+  box-shadow: 7px 12px 43px rgba(0, 0, 0, 0.14);
+  border-radius: 30px;
+
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceData {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+}
+
+.serviceData > img {
+  width: 64px;
+  height: 64px;
+}
+
+.servicesRightSide {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.serviceData > :nth-child(2) {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #5fe26c;
+}
+
+.serviceData > :nth-child(3) {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #90bd95;
+}
+
+.story {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ff6868;
+}
+
+@media (max-width: 1240px) {
+  .services {
+    flex-direction: column;
+    gap: 4rem;
+    margin-left: 0;
+  }
+  .servicesLeftSide {
+    margin-left: 5vw;
+  }
+  .servicesRightSide {
+    margin: 0 auto;
+    width: unset;
+  }
+}
+
+@media (max-width: 620px) {
+  .servicesLeftSide {
+    width: unset;
+    margin-left: unset;
+  }
+  .services {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .services {
+    margin-top: 0px;
+  }
+}

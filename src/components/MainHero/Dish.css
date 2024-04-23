@@ -1,0 +1,48 @@
+.dishes > :nth-child(1) {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.dishes {
+  width: 200px;
+  height: 70px;
+  gap: 1rem;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 7px 35px 51px rgba(0, 0, 0, 0.14);
+}
+
+.dishItems {
+  width: 100%;
+}
+
+.dishItems > :nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.star {
+  width: 12px;
+  height: 12px;
+}
+
+.starContainer {
+  display: flex;
+  gap: 0.2rem;
+  height: 20px;
+}
+
+.prices > :nth-child(2) {
+  font-weight: 600;
+  font-size: 18px;
+
+  color: #515151;
+}
+
+.prices > :nth-child(1) {
+  color: #ff7979;
+  font-size: 14px;
+  font-weight: 600;
+}
