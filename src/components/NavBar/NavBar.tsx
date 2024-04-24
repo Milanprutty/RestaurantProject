@@ -92,10 +92,10 @@ const NavBar = () => {
               <span className="line-3"></span>
             </div>
           </li>
-          <li style={{ display: "flex" }}>
+          <li>
             <img className="searchIcon" src={searchIcon} />
           </li>
-          <li style={{ display: "flex" }}>
+          <li>
             <img className="shoppingBag" src={shoppingBag} />
           </li>
           <li className="rightSideBtn">

@@ -40,20 +40,12 @@ const SimpleSlider = ({ DishData }: Props) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 3,
 
     responsive: [
       {
-        breakpoint: 1260,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -61,12 +53,30 @@ const SimpleSlider = ({ DishData }: Props) => {
           dots: true,
         },
       },
+
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
     ],
   };
 
   return (
     <div className="slider-container">
-      <div>
+      <div style={{ position: "relative" }}>
         <div className="carouselBtnContainer">
           <div onClick={previous} className="carouselBtn">
             <img src={arrowLeft} alt="arrowLeft" />

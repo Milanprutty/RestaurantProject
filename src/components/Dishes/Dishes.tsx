@@ -14,10 +14,9 @@ const Dishes = () => {
             <div className="standoutDishes">standout dishes from our menu</div>
           </div>
         </div>
-
-        <div className="carousel">
-          <SimpleSlider DishData={DishData} />
-        </div>
+      </div>
+      <div className="carousel">
+        <SimpleSlider DishData={DishData} />
       </div>
     </div>
   );

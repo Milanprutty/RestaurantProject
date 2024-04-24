@@ -154,7 +154,7 @@
   margin-top: 100px;
 
   display: flex;
-  gap: 12rem;
+  gap: 2rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -168,10 +168,11 @@
 }
 
 .carouselBtnContainer {
-  margin-left: 84vw;
-  margin-top: -50px;
+  right: 60px;
+  position: absolute;
+  bottom: 40px;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .slick-slide > :nth-child(1) {
@@ -195,11 +196,13 @@
 }
 
 .slick-list {
-  width: 1250px;
 }
 
 .specialDishContainer {
   margin-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 @media (max-width: 523px) {
@@ -212,4 +215,8 @@
   .dishAndBtns {
     text-align: center;
   }
+}
+
+.slick-arrow {
+  display: none !important;
 }
