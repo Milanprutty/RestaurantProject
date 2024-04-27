@@ -10,8 +10,8 @@ const MainHero = () => {
     <div className="mainHeroContainer">
       <div className="leftSide">
         <div className="headerDiv">
-          <div>Dive into Delights </div>
-          <div>
+          <div style={{ color: "black" }}>Dive into Delights </div>
+          <div style={{ color: "black" }}>
             Of Delectable <span>Food</span>
           </div>
           <p>
